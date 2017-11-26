@@ -25,3 +25,12 @@ Initialised empty Git repository in /home/youminchen/my_git_test/.git/
   589  git push https://github.com/cym263/youmin02.git
 
 
+  602  git add .
+  603  git add --all
+  604  git add status
+  605  git status
+  606  git push
+  608  git push https://github.com/cym263/youmin02.git
+  609  git commit -m  'remove three p3'
+  610  git push https://github.com/cym263/youmin02.git
+
