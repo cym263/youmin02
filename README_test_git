@@ -1,0 +1,36 @@
+ git init
+Initialised empty Git repository in /home/youminchen/my_git_test/.git/
+
+  cd my_git_test/
+  567  ls
+  568  touch p1
+  569  touch p2
+  570  touch p3
+  571  git status
+  572  git init
+  573  git status
+  574  vi README_test_git
+  575  git status
+  576  git add .
+  577  git commit -m  'git test in Oxford'
+  578  git config --global user.name "cym263"
+  579  git config --global user.email "cym263@yahoo.com"
+  580  git status
+  581  git push
+  583  git push https://github.com/cym263/youmin02.git
+  584  git pull
+  585  git pull https://github.com/cym263/youmin02.git
+  586  ls
+  587  git push
+  589  git push https://github.com/cym263/youmin02.git
+
+
+  602  git add .
+  603  git add --all
+  604  git add status
+  605  git status
+  606  git push
+  608  git push https://github.com/cym263/youmin02.git
+  609  git commit -m  'remove three p3'
+  610  git push https://github.com/cym263/youmin02.git
+
