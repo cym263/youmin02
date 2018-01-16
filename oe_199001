@@ -1,0 +1,1676 @@
+WARNING:cmor_target:Input table /lus/snx11062/scratch/ms/gb/ukyc/cmorize/ece2cmor3/ece2cmor3/resources/tables/CMIP6_CV_test.json has been ignored. Reason: No JSON object could be decoded
+
+ERROR:taskloader:The tso variable does not appear in the CMOR table file CMIP6_3hr.json
+ERROR:taskloader:The orog variable does not appear in the CMOR table file CMIP6_AERmon.json
+ERROR:taskloader:The ua850 variable does not appear in the CMOR table file CMIP6_E3hrPt.json
+ERROR:taskloader:The va850 variable does not appear in the CMOR table file CMIP6_E3hrPt.json
+ERROR:taskloader:The psl variable does not appear in the CMOR table file CMIP6_E3hrPt.json
+ERROR:taskloader:The mrlsl variable does not appear in the CMOR table file CMIP6_Lmon.json
+ERROR:taskloader:The mrlsl variable does not appear in the CMOR table file CMIP6_6hrPlevPt.json
+ERROR:taskloader:The snw variable does not appear in the CMOR table file CMIP6_Eday.json
+ERROR:taskloader:The mrro variable does not appear in the CMOR table file CMIP6_Eday.json
+INFO:taskloader:Found 236 cmor target variables in input variable list.
+INFO:taskloader:Created 192 ece2cmor tasks from input variable list.
+INFO:ece2cmorlib:Selected 192 IFS tasks from 192 input tasks
+INFO:ifs2cmor:Inspecting 192 tasks.
+INFO:ifs2cmor:Validated 192 tasks for processing.
+INFO:ifs2cmor:Executing 192 IFS tasks...
+WARNING:ifs2cmor:Mask land is not supported as an IFS mask, skipping masking
+WARNING:ifs2cmor:Mask land is not supported as an IFS mask, skipping masking
+WARNING:ifs2cmor:Mask land is not supported as an IFS mask, skipping masking
+WARNING:ifs2cmor:Mask land is not supported as an IFS mask, skipping masking
+WARNING:ifs2cmor:Mask land is not supported as an IFS mask, skipping masking
+WARNING:ifs2cmor:Mask land is not supported as an IFS mask, skipping masking
+WARNING:ifs2cmor:Mask land is not supported as an IFS mask, skipping masking
+WARNING:ifs2cmor:Mask land is not supported as an IFS mask, skipping masking
+WARNING:ifs2cmor:Mask land is not supported as an IFS mask, skipping masking
+WARNING:ifs2cmor:Mask land is not supported as an IFS mask, skipping masking
+WARNING:ifs2cmor:Mask land is not supported as an IFS mask, skipping masking
+WARNING:ifs2cmor:Mask land is not supported as an IFS mask, skipping masking
+WARNING:ifs2cmor:Mask land is not supported as an IFS mask, skipping masking
+WARNING:ifs2cmor:Mask land is not supported as an IFS mask, skipping masking
+WARNING:ifs2cmor:Mask land is not supported as an IFS mask, skipping masking
+WARNING:ifs2cmor:Mask land is not supported as an IFS mask, skipping masking
+WARNING:ifs2cmor:Mask land is not supported as an IFS mask, skipping masking
+WARNING:ifs2cmor:Mask land is not supported as an IFS mask, skipping masking
+WARNING:ifs2cmor:Mask land is not supported as an IFS mask, skipping masking
+WARNING:ifs2cmor:Mask land is not supported as an IFS mask, skipping masking
+WARNING:ifs2cmor:Mask land is not supported as an IFS mask, skipping masking
+WARNING:ifs2cmor:Mask land is not supported as an IFS mask, skipping masking
+WARNING:ifs2cmor:Mask land is not supported as an IFS mask, skipping masking
+WARNING:ifs2cmor:Mask land is not supported as an IFS mask, skipping masking
+WARNING:ifs2cmor:Mask land is not supported as an IFS mask, skipping masking
+WARNING:ifs2cmor:Mask land is not supported as an IFS mask, skipping masking
+WARNING:ifs2cmor:Mask land is not supported as an IFS mask, skipping masking
+WARNING:ifs2cmor:Mask land is not supported as an IFS mask, skipping masking
+INFO:ifs2cmor:Post-processing mask variables...
+INFO:ifs2cmor:Post-processing 0 IFS tasks...
+INFO:ifs2cmor:Post-processed batch of 0 tasks.
+INFO:ifs2cmor:Post-processing surface pressures...
+INFO:ifs2cmor:Post-processing 2 IFS tasks...
+INFO:ifs2cmor:Looking for surface pressure variable in input files...
+INFO:ifs2cmor:Found lnsp in spectral file
+INFO:ifs2cmor:Looking for surface pressure variable in input files...
+INFO:ifs2cmor:Found lnsp in spectral file
+INFO:postproc:Post-processing target ps in table CFday from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -daymean -expr,'var134=exp(var152)' -sp2gpl -selmon,1 -selcode,152
+INFO:postproc:Post-processing target ps in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -monmean -expr,'var134=exp(var152)' -sp2gpl -selmon,1 -selcode,152
+INFO:ifs2cmor:Post-processed batch of 2 tasks.
+INFO:ifs2cmor:Cmorizing surface pressures...
+INFO:ifs2cmor:Cmorizing 2 IFS tasks...
+INFO:ifs2cmor:Loading CMOR table CFday...
+INFO:ifs2cmor:Creating time axes for table CFday...
+INFO:ifs2cmor:Creating time axis using variable ps...
+INFO:ifs2cmor:Creating depth axes for table CFday...
+INFO:ifs2cmor:Cmorizing source variable 134 to target variable ps...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'ps' (table CFday) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+
+[2;34;47mC Traceback:
+In function: _CV_checkSourceID
+! called from: cmor_setGblAttr
+! called from: cmor_write
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: Your input attribute "source" with value 
+! "EC-Earth3-HR" will be replaced with value 
+! "EC-Earth3-HR (2017): 
+aerosol: none
+atmos: IFS cy36r4 (TL511; linearly reduced Gaussian grid; 1024 x 512 longitude/latitude; 91 levels; top level 0.01 hPa)
+atmosChem: none
+land: HTESSEL (land surface scheme built in IFS)
+landIce: none
+ocean: NEMO3.6 (ORCA025; tripolar primarily 0.25 degrees; 1442 x 1921 longitude/latitude; 75 levels; top grid cell 0-1 m)
+ocnBgchem: none
+seaIce: LIM3".
+! 
+! 
+!  See Control Vocabulary JSON file.(/lus/snx11062/scratch/ms/gb/ukyc/cmorize/ece2cmor3/ece2cmor3/resources/tables/CMIP6_CV.json)
+! 
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Loading CMOR table Amon...
+INFO:ifs2cmor:Creating time axes for table Amon...
+INFO:ifs2cmor:Creating time axis using variable ps...
+INFO:ifs2cmor:Creating depth axes for table Amon...
+INFO:ifs2cmor:Cmorizing source variable 134 to target variable ps...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'ps' (table Amon) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Post-processing regular variables...
+INFO:ifs2cmor:Post-processing 190 IFS tasks...
+INFO:ifs2cmor:Looking for surface pressure variable in input files...
+INFO:ifs2cmor:Found lnsp in spectral file
+INFO:ifs2cmor:Looking for surface pressure variable in input files...
+INFO:ifs2cmor:Found lnsp in spectral file
+ERROR:postproc:Unsupported combination of frequency 3hr with time operators [u'mean'] encountered
+ERROR:postproc:Unsupported combination of frequency 3hr with time operators [u'mean'] encountered
+ERROR:postproc:Unsupported combination of frequency 3hr with time operators [u'mean'] encountered
+ERROR:postproc:Unsupported combination of frequency 3hr with time operators [u'mean'] encountered
+ERROR:postproc:Unsupported combination of frequency 3hr with time operators [u'mean'] encountered
+ERROR:postproc:Unsupported combination of frequency 3hr with time operators [u'mean'] encountered
+ERROR:postproc:Unsupported combination of frequency 3hr with time operators [u'mean'] encountered
+ERROR:postproc:Unsupported combination of frequency 3hr with time operators [u'mean'] encountered
+ERROR:postproc:Unsupported combination of frequency 3hr with time operators [u'mean'] encountered
+ERROR:postproc:Unsupported combination of frequency 3hr with time operators [u'mean'] encountered
+ERROR:postproc:Unsupported combination of frequency 3hr with time operators [u'mean'] encountered
+ERROR:postproc:Unsupported combination of frequency 3hr with time operators [u'mean'] encountered
+ERROR:postproc:Unsupported combination of frequency 3hr with time operators [u'mean'] encountered
+ERROR:postproc:Unsupported combination of frequency 3hr with time operators [u'mean'] encountered
+ERROR:cdoapi:(returncode:1) cdo showltype: Started child process "selcode,248 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe1.1)".
+Warning (cgribexScanTimestep1) : Record 23 (id=31.128 lev1=0 lev2=0) timestep 1: Inconsistent verification time!
+cdo(2) selcode (Warning): Code number 248 not found!
+cdo(2) selcode (Abort): No variables selected!
+
+ERROR:cdoapi:(returncode:1) cdo showltype: Started child process "selcode,246 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe1.1)".
+Warning (cgribexScanTimestep1) : Record 23 (id=31.128 lev1=0 lev2=0) timestep 1: Inconsistent verification time!
+cdo(2) selcode (Warning): Code number 246 not found!
+cdo(2) selcode (Abort): No variables selected!
+
+ERROR:cdoapi:(returncode:1) cdo showltype: Started child process "selcode,247 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe1.1)".
+Warning (cgribexScanTimestep1) : Record 23 (id=31.128 lev1=0 lev2=0) timestep 1: Inconsistent verification time!
+cdo(2) selcode (Warning): Code number 247 not found!
+cdo(2) selcode (Abort): No variables selected!
+
+ERROR:postproc:Could not retrieve pressure levels [u'100000.', u'92500.', u'85000.', u'70000.', u'60000.', u'50000.', u'40000.', u'30000.', u'25000.', u'20000.', u'15000.', u'10000.', u'7000.', u'5000.', u'3000.', u'2000.', u'1000.', u'500.', u'100.'] from levels [100000.0, 92500.0, 85000.0, 70000.0, 50000.0, 40000.0, 30000.0, 20000.0, 10000.0, 5000.0, 1000.0] in file for variable ta
+ERROR:postproc:Could not retrieve pressure levels [u'100000.', u'92500.', u'85000.', u'70000.', u'60000.', u'50000.', u'40000.', u'30000.', u'25000.', u'20000.', u'15000.', u'10000.', u'7000.', u'5000.', u'3000.', u'2000.', u'1000.', u'500.', u'100.'] from levels [100000.0, 92500.0, 85000.0, 70000.0, 50000.0, 40000.0, 30000.0, 20000.0, 10000.0, 5000.0, 1000.0] in file for variable ua
+ERROR:postproc:Could not retrieve pressure levels [u'100000.', u'92500.', u'85000.', u'70000.', u'60000.', u'50000.', u'40000.', u'30000.', u'25000.', u'20000.', u'15000.', u'10000.', u'7000.', u'5000.', u'3000.', u'2000.', u'1000.', u'500.', u'100.'] from levels [100000.0, 92500.0, 85000.0, 70000.0, 50000.0, 40000.0, 30000.0, 20000.0, 10000.0, 5000.0, 1000.0] in file for variable va
+ERROR:postproc:Could not retrieve pressure levels [u'100000.', u'92500.', u'85000.', u'70000.', u'60000.', u'50000.', u'40000.', u'30000.', u'25000.', u'20000.', u'15000.', u'10000.', u'7000.', u'5000.', u'3000.', u'2000.', u'1000.', u'500.', u'100.'] from levels [100000.0, 92500.0, 85000.0, 70000.0, 50000.0, 40000.0, 30000.0, 20000.0, 10000.0, 5000.0, 1000.0] in file for variable hus
+ERROR:cdoapi:(returncode:1) cdo showltype: Started child process "selcode,157 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe1.1)".
+cdo(2) selcode (Warning): Code number 157 not found!
+cdo(2) selcode (Abort): No variables selected!
+
+ERROR:postproc:Could not retrieve pressure levels for hur with axes []
+ERROR:cdoapi:(returncode:1) cdo showltype: Started child process "selcode,135 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe1.1)".
+cdo(2) selcode (Warning): Code number 135 not found!
+cdo(2) selcode (Abort): No variables selected!
+
+ERROR:postproc:Could not retrieve pressure levels for wap with axes []
+ERROR:postproc:Could not retrieve pressure levels [u'100000.', u'92500.', u'85000.', u'70000.', u'60000.', u'50000.', u'40000.', u'30000.', u'25000.', u'20000.', u'15000.', u'10000.', u'7000.', u'5000.', u'3000.', u'2000.', u'1000.', u'500.', u'100.'] from levels [100000.0, 92500.0, 85000.0, 70000.0, 50000.0, 40000.0, 30000.0, 20000.0, 10000.0, 5000.0, 1000.0] in file for variable zg
+ERROR:cdoapi:(returncode:1) cdo showltype: Started child process "selcode,157 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe1.1)".
+cdo(2) selcode (Warning): Code number 157 not found!
+cdo(2) selcode (Abort): No variables selected!
+
+ERROR:postproc:Unsupported combination of frequency 3hr with time operators [u'mean'] encountered
+ERROR:postproc:Unsupported combination of frequency 3hr with time operators [u'mean'] encountered
+ERROR:postproc:Unsupported combination of frequency 3hr with time operators [u'mean'] encountered
+ERROR:postproc:Unsupported combination of frequency 3hr with time operators [u'mean'] encountered
+ERROR:postproc:Unsupported combination of frequency 3hr with time operators [u'mean'] encountered
+ERROR:postproc:Unsupported combination of frequency 3hr with time operators [u'mean'] encountered
+ERROR:postproc:Unsupported combination of frequency 3hr with time operators [u'mean'] encountered
+ERROR:postproc:Unsupported combination of frequency 3hr with time operators [u'mean'] encountered
+ERROR:postproc:Unsupported combination of frequency 6hr with time operators [u'mean'] encountered
+ERROR:postproc:Unsupported combination of frequency 6hr with time operators [u'mean'] encountered
+ERROR:cdoapi:(returncode:1) cdo showltype: Started child process "selcode,135 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe1.1)".
+cdo(2) selcode (Warning): Code number 135 not found!
+cdo(2) selcode (Abort): No variables selected!
+
+ERROR:postproc:Could not retrieve pressure levels for wap4 with axes []
+ERROR:postproc:Could not retrieve pressure levels [u'100000.', u'85000.', u'70000.', u'50000.', u'25000.', u'10000.', u'5000.', u'1000.'] from levels [100000.0, 92500.0, 85000.0, 70000.0, 50000.0, 40000.0, 30000.0, 20000.0, 10000.0, 5000.0, 1000.0] in file for variable ta
+ERROR:cdoapi:(returncode:1) cdo showltype: Started child process "selcode,157 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe1.1)".
+cdo(2) selcode (Warning): Code number 157 not found!
+cdo(2) selcode (Abort): No variables selected!
+
+ERROR:postproc:Could not retrieve pressure levels for hur with axes []
+ERROR:postproc:Could not retrieve pressure levels [u'100000.', u'85000.', u'70000.', u'50000.', u'25000.', u'10000.', u'5000.', u'1000.'] from levels [100000.0, 92500.0, 85000.0, 70000.0, 50000.0, 40000.0, 30000.0, 20000.0, 10000.0, 5000.0, 1000.0] in file for variable hus
+ERROR:cdoapi:(returncode:1) cdo showltype: Started child process "selcode,135 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe1.1)".
+cdo(2) selcode (Warning): Code number 135 not found!
+cdo(2) selcode (Abort): No variables selected!
+
+ERROR:postproc:Could not retrieve pressure levels for wap with axes []
+ERROR:postproc:Could not retrieve pressure levels [u'100000.', u'85000.', u'70000.', u'50000.', u'25000.', u'10000.', u'5000.', u'1000.'] from levels [100000.0, 92500.0, 85000.0, 70000.0, 50000.0, 40000.0, 30000.0, 20000.0, 10000.0, 5000.0, 1000.0] in file for variable va
+ERROR:postproc:Could not retrieve pressure levels [u'100000.', u'85000.', u'70000.', u'50000.', u'25000.', u'10000.', u'5000.', u'1000.'] from levels [100000.0, 92500.0, 85000.0, 70000.0, 50000.0, 40000.0, 30000.0, 20000.0, 10000.0, 5000.0, 1000.0] in file for variable ua
+ERROR:postproc:Could not retrieve pressure levels [u'100000.', u'85000.', u'70000.', u'50000.', u'25000.', u'10000.', u'5000.', u'1000.'] from levels [100000.0, 92500.0, 85000.0, 70000.0, 50000.0, 40000.0, 30000.0, 20000.0, 10000.0, 5000.0, 1000.0] in file for variable zg
+ERROR:postproc:Could not retrieve pressure levels [u'100000.', u'97500.', u'95000.', u'92500.', u'90000.', u'87500.', u'85000.', u'82500.', u'80000.', u'77500.', u'75000.', u'70000.', u'65000.', u'60000.', u'55000.', u'50000.', u'45000.', u'40000.', u'35000.', u'30000.', u'25000.', u'22500.', u'20000.', u'17500.', u'15000.', u'12500.', u'10000.'] from levels [100000.0, 92500.0, 85000.0, 70000.0, 50000.0, 40000.0, 30000.0, 20000.0, 10000.0, 5000.0, 1000.0] in file for variable ta27
+ERROR:postproc:Could not retrieve pressure levels [u'100000.', u'97500.', u'95000.', u'92500.', u'90000.', u'87500.', u'85000.', u'82500.', u'80000.', u'77500.', u'75000.', u'70000.', u'65000.', u'60000.', u'55000.', u'50000.', u'45000.', u'40000.', u'35000.', u'30000.', u'25000.', u'22500.', u'20000.', u'17500.', u'15000.', u'12500.', u'10000.'] from levels [100000.0, 92500.0, 85000.0, 70000.0, 50000.0, 40000.0, 30000.0, 20000.0, 10000.0, 5000.0, 1000.0] in file for variable ua27
+ERROR:postproc:Could not retrieve pressure levels [u'100000.', u'97500.', u'95000.', u'92500.', u'90000.', u'87500.', u'85000.', u'82500.', u'80000.', u'77500.', u'75000.', u'70000.', u'65000.', u'60000.', u'55000.', u'50000.', u'45000.', u'40000.', u'35000.', u'30000.', u'25000.', u'22500.', u'20000.', u'17500.', u'15000.', u'12500.', u'10000.'] from levels [100000.0, 92500.0, 85000.0, 70000.0, 50000.0, 40000.0, 30000.0, 20000.0, 10000.0, 5000.0, 1000.0] in file for variable va27
+ERROR:postproc:Could not retrieve pressure levels [u'100000.', u'97500.', u'95000.', u'92500.', u'90000.', u'87500.', u'85000.', u'82500.', u'80000.', u'77500.', u'75000.', u'70000.', u'65000.', u'60000.', u'55000.', u'50000.', u'45000.', u'40000.', u'35000.', u'30000.', u'25000.', u'22500.', u'20000.', u'17500.', u'15000.', u'12500.', u'10000.'] from levels [100000.0, 92500.0, 85000.0, 70000.0, 50000.0, 40000.0, 30000.0, 20000.0, 10000.0, 5000.0, 1000.0] in file for variable zg27
+ERROR:postproc:Could not retrieve pressure levels [u'100000.', u'97500.', u'95000.', u'92500.', u'90000.', u'87500.', u'85000.', u'82500.', u'80000.', u'77500.', u'75000.', u'70000.', u'65000.', u'60000.', u'55000.', u'50000.', u'45000.', u'40000.', u'35000.', u'30000.', u'25000.', u'22500.', u'20000.', u'17500.', u'15000.', u'12500.', u'10000.'] from levels [100000.0, 92500.0, 85000.0, 70000.0, 50000.0, 40000.0, 30000.0, 20000.0, 10000.0, 5000.0, 1000.0] in file for variable hus27
+ERROR:cdoapi:(returncode:1) cdo showltype: Started child process "selcode,135 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe1.1)".
+cdo(2) selcode (Warning): Code number 135 not found!
+cdo(2) selcode (Abort): No variables selected!
+
+ERROR:cdoapi:(returncode:1) cdo showltype: Started child process "selcode,135 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe1.1)".
+cdo(2) selcode (Warning): Code number 135 not found!
+cdo(2) selcode (Abort): No variables selected!
+
+ERROR:cdoapi:(returncode:1) cdo showltype: Started child process "selcode,135 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe1.1)".
+cdo(2) selcode (Warning): Code number 135 not found!
+cdo(2) selcode (Abort): No variables selected!
+
+ERROR:postproc:Could not retrieve pressure levels for wap500 with axes []
+ERROR:cdoapi:(returncode:1) cdo showltype: Started child process "selcode,135 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe1.1)".
+cdo(2) selcode (Warning): Code number 135 not found!
+cdo(2) selcode (Abort): No variables selected!
+
+ERROR:cdoapi:(returncode:1) cdo showltype: Started child process "selcode,157 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe1.1)".
+cdo(2) selcode (Warning): Code number 157 not found!
+cdo(2) selcode (Abort): No variables selected!
+
+ERROR:cdoapi:(returncode:1) cdo showltype: Started child process "selcode,248 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe1.1)".
+Warning (cgribexScanTimestep1) : Record 23 (id=31.128 lev1=0 lev2=0) timestep 1: Inconsistent verification time!
+cdo(2) selcode (Warning): Code number 248 not found!
+cdo(2) selcode (Abort): No variables selected!
+
+ERROR:cdoapi:(returncode:1) cdo showltype: Started child process "selcode,246 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe1.1)".
+Warning (cgribexScanTimestep1) : Record 23 (id=31.128 lev1=0 lev2=0) timestep 1: Inconsistent verification time!
+cdo(2) selcode (Warning): Code number 246 not found!
+cdo(2) selcode (Abort): No variables selected!
+
+ERROR:cdoapi:(returncode:1) cdo showltype: Started child process "selcode,247 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe1.1)".
+Warning (cgribexScanTimestep1) : Record 23 (id=31.128 lev1=0 lev2=0) timestep 1: Inconsistent verification time!
+cdo(2) selcode (Warning): Code number 247 not found!
+cdo(2) selcode (Abort): No variables selected!
+
+ERROR:cdoapi:(returncode:1) cdo showltype: Started child process "selcode,54 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe1.1)".
+cdo(2) selcode (Warning): Code number 54 not found!
+cdo(2) selcode (Abort): No variables selected!
+
+ERROR:postproc:Could not retrieve pressure levels [u'100000.', u'97500.', u'95000.', u'92500.', u'90000.', u'87500.', u'85000.', u'82500.', u'80000.', u'77500.', u'75000.', u'70000.', u'65000.', u'60000.', u'55000.', u'50000.', u'45000.', u'40000.', u'35000.', u'30000.', u'25000.', u'22500.', u'20000.', u'17500.', u'15000.', u'12500.', u'10000.'] from levels [100000.0, 92500.0, 85000.0, 70000.0, 50000.0, 40000.0, 30000.0, 20000.0, 10000.0, 5000.0, 1000.0] in file for variable hus27
+ERROR:postproc:Could not retrieve pressure levels [u'100000.', u'97500.', u'95000.', u'92500.', u'90000.', u'87500.', u'85000.', u'82500.', u'80000.', u'77500.', u'75000.', u'70000.', u'65000.', u'60000.', u'55000.', u'50000.', u'45000.', u'40000.', u'35000.', u'30000.', u'25000.', u'22500.', u'20000.', u'17500.', u'15000.', u'12500.', u'10000.'] from levels [100000.0, 92500.0, 85000.0, 70000.0, 50000.0, 40000.0, 30000.0, 20000.0, 10000.0, 5000.0, 1000.0] in file for variable ta27
+ERROR:cdoapi:(returncode:1) cdo showltype: Started child process "selcode,138 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe1.1)".
+cdo(2) selcode (Warning): Code number 138 not found!
+cdo(2) selcode (Abort): No variables selected!
+
+ERROR:postproc:Could not retrieve pressure levels for vortmean with axes []
+ERROR:postproc:Could not retrieve pressure levels [u'100000.', u'97500.', u'95000.', u'92500.', u'90000.', u'87500.', u'85000.', u'82500.', u'80000.', u'77500.', u'75000.', u'70000.', u'65000.', u'60000.', u'55000.', u'50000.', u'45000.', u'40000.', u'35000.', u'30000.', u'25000.', u'22500.', u'20000.', u'17500.', u'15000.', u'12500.', u'10000.'] from levels [100000.0, 92500.0, 85000.0, 70000.0, 50000.0, 40000.0, 30000.0, 20000.0, 10000.0, 5000.0, 1000.0] in file for variable zg27
+ERROR:postproc:Could not retrieve pressure levels [u'92500.', u'85000.', u'70000.', u'60000.', u'50000.', u'25000.', u'5000.'] from levels [100000.0, 92500.0, 85000.0, 70000.0, 50000.0, 40000.0, 30000.0, 20000.0, 10000.0, 5000.0, 1000.0] in file for variable va7h
+ERROR:postproc:Could not retrieve pressure levels [u'92500.', u'85000.', u'70000.', u'60000.', u'50000.', u'25000.', u'5000.'] from levels [100000.0, 92500.0, 85000.0, 70000.0, 50000.0, 40000.0, 30000.0, 20000.0, 10000.0, 5000.0, 1000.0] in file for variable ua7h
+ERROR:postproc:Multiple target variables joined to single cdo command: set([u'6hrPt', u'6hr'])
+INFO:postproc:Post-processing target wap in table CFday from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -sp2gpl -daymean -selzaxis,hybrid -selmon,1 -selcode,135
+ERROR:cdoapi:(returncode:1) cdo sp2gpl: Started child process "daymean -selzaxis,hybrid -selmon,1 -selcode,135 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe1.1)".
+cdo(2) daymean: Started child process "selzaxis,hybrid -selmon,1 -selcode,135 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe2.1)".
+cdo(3) selzaxis: Started child process "selmon,1 -selcode,135 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe3.1)".
+cdo(4) selmonth: Started child process "selcode,135 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe4.1)".
+cdo(5) selcode (Warning): Code number 135 not found!
+cdo(5) selcode (Abort): No variables selected!
+
+INFO:postproc:Post-processing target snw in table LImon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -monmean -selmon,1 -selcode,141
+INFO:postproc:Post-processing target lwsnl in table LImon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -monmean -selmon,1 -selcode,141
+INFO:postproc:Post-processing target tslsi in table 3hr from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -selcode,235
+INFO:postproc:Post-processing target rldscs in table 3hr from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -expr,'var104=var211-var177+var175' -setgridtype,regular -selcode,177,211,175
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+INFO:postproc:Post-processing target tasmin in table day from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -daymin -setgridtype,regular -selmon,1 -selcode,202
+INFO:postproc:Post-processing target hfss in table day from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -daymean -selmon,1 -selcode,146
+INFO:postproc:Post-processing target prw in table E3hr from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -selcode,137
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+INFO:postproc:Post-processing target hfls in table day from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -daymean -selmon,1 -selcode,147
+INFO:postproc:Post-processing target tslsi in table day from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -daymean -selmon,1 -selcode,235
+INFO:postproc:Post-processing target hur in table CFday from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -sp2gpl -daymean -selzaxis,hybrid -selmon,1 -selcode,157
+ERROR:cdoapi:(returncode:1) cdo sp2gpl: Started child process "daymean -selzaxis,hybrid -selmon,1 -selcode,157 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe1.1)".
+cdo(2) daymean: Started child process "selzaxis,hybrid -selmon,1 -selcode,157 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe2.1)".
+cdo(3) selzaxis: Started child process "selmon,1 -selcode,157 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe3.1)".
+cdo(4) selmonth: Started child process "selcode,157 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe4.1)".
+cdo(5) selcode (Warning): Code number 157 not found!
+cdo(5) selcode (Abort): No variables selected!
+
+INFO:postproc:Post-processing target cli in table CFday from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -daymean -selzaxis,hybrid -selmon,1 -selcode,247
+ERROR:cdoapi:(returncode:1) cdo setgridtype: Started child process "daymean -selzaxis,hybrid -selmon,1 -selcode,247 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe1.1)".
+cdo(2) daymean: Started child process "selzaxis,hybrid -selmon,1 -selcode,247 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe2.1)".
+cdo(3) selzaxis: Started child process "selmon,1 -selcode,247 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe3.1)".
+cdo(4) selmonth: Started child process "selcode,247 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe4.1)".
+Warning (cgribexScanTimestep1) : Record 23 (id=31.128 lev1=0 lev2=0) timestep 1: Inconsistent verification time!
+cdo(5) selcode (Warning): Code number 247 not found!
+cdo(5) selcode (Abort): No variables selected!
+
+INFO:postproc:Post-processing target u2 in table Emon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -monmean -expr,'var107=var131*var131' -sp2gpl -selzaxis,hybrid -selmon,1 -selcode,131
+ERROR:cdoapi:(returncode:1) cdo monmean: Started child process "expr,var107=var131*var131 -sp2gpl -selzaxis,hybrid -selmon,1 -selcode,131 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe1.1)".
+cdo(2) expr: Started child process "sp2gpl -selzaxis,hybrid -selmon,1 -selcode,131 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe2.1)".
+cdo(3) sp2gpl: Started child process "selzaxis,hybrid -selmon,1 -selcode,131 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe3.1)".
+cdo(4) selzaxis: Started child process "selmon,1 -selcode,131 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe4.1)".
+cdo(5) selmonth: Started child process "selcode,131 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe5.1)".
+cdo(4) selzaxis (Warning): Zaxis type hybrid not found!
+cdo(4) selzaxis (Abort): No variables selected!
+
+INFO:postproc:Post-processing target rsdscs in table 3hr from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -expr,'var102=var210-var176+var169' -setgridtype,regular -selcode,176,169,210
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+INFO:postproc:Post-processing target psl in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -monmean -selmon,1 -selcode,151
+INFO:postproc:Post-processing target tsn in table LImon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -monmean -selmon,1 -selcode,238
+INFO:postproc:Post-processing target hurs in table day from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -daymean -expr,'var80=100.*exp(17.62*((var168-273.15)/(var168-30.03)-(var167-273.15)/(var167-30.03)))' -setgridtype,regular -selmon,1 -selcode,168,167
+INFO:postproc:Post-processing target mrsos in table day from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -daymean -expr,'var99=70*var39+30*var40' -setgridtype,regular -selmon,1 -selcode,40,39
+INFO:postproc:Post-processing target twap in table Emon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -monmean -expr,'var113=var130*var135' -sp2gpl -selzaxis,hybrid -selmon,1 -selcode,130,135
+ERROR:cdoapi:(returncode:1) cdo monmean: Started child process "expr,var113=var130*var135 -sp2gpl -selzaxis,hybrid -selmon,1 -selcode,130,135 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe1.1)".
+cdo(2) expr: Started child process "sp2gpl -selzaxis,hybrid -selmon,1 -selcode,130,135 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe2.1)".
+cdo(3) sp2gpl: Started child process "selzaxis,hybrid -selmon,1 -selcode,130,135 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe3.1)".
+cdo(4) selzaxis: Started child process "selmon,1 -selcode,130,135 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe4.1)".
+cdo(5) selmonth: Started child process "selcode,130,135 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe5.1)".
+cdo(6) selcode (Warning): Code number 135 not found!
+cdo(4) selzaxis (Warning): Zaxis type hybrid not found!
+cdo(4) selzaxis (Abort): No variables selected!
+
+INFO:postproc:Post-processing target tasmax in table day from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -daymax -setgridtype,regular -selmon,1 -selcode,201
+INFO:postproc:Post-processing target snw in table 6hrPlevPt from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -selhour,0,6,12,18 -selcode,141
+INFO:postproc:Post-processing target rsds in table day from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -daymean -selmon,1 -selcode,169
+INFO:postproc:Post-processing target ps in table 3hr from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -expr,'var134=exp(var152)' -sp2gpl -selcode,152
+INFO:postproc:Post-processing target hur in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -sp2gpl -monmean -selmon,1 -selcode,157
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+ERROR:cdoapi:(returncode:1) cdo sp2gpl: Started child process "monmean -selmon,1 -selcode,157 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe1.1)".
+cdo(2) monmean: Started child process "selmon,1 -selcode,157 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe2.1)".
+cdo(3) selmonth: Started child process "selcode,157 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe3.1)".
+cdo(4) selcode (Warning): Code number 157 not found!
+cdo(4) selcode (Abort): No variables selected!
+
+INFO:postproc:Post-processing target zg in table day from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -sp2gpl -daymean -selmon,1 -selcode,129
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+INFO:postproc:Post-processing target uas in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -monmean -selmon,1 -selcode,165
+INFO:postproc:Post-processing target mrrob in table Eday from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -daymean -selmon,1 -selcode,9
+ERROR:cdoapi:(returncode:1) cdo setgridtype: Started child process "daymean -selmon,1 -selcode,9 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe1.1)".
+cdo(2) daymean: Started child process "selmon,1 -selcode,9 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe2.1)".
+cdo(3) selmonth: Started child process "selcode,9 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe3.1)".
+Warning (cgribexScanTimestep1) : Record 23 (id=31.128 lev1=0 lev2=0) timestep 1: Inconsistent verification time!
+cdo(4) selcode (Warning): Code number 9 not found!
+cdo(4) selcode (Abort): No variables selected!
+
+INFO:postproc:Post-processing target hus in table CFmon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -monmean -selzaxis,hybrid -selmon,1 -selcode,133
+ERROR:cdoapi:(returncode:1) cdo setgridtype: Started child process "monmean -selzaxis,hybrid -selmon,1 -selcode,133 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe1.1)".
+cdo(2) monmean: Started child process "selzaxis,hybrid -selmon,1 -selcode,133 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe2.1)".
+cdo(3) selzaxis: Started child process "selmon,1 -selcode,133 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe3.1)".
+cdo(4) selmonth: Started child process "selcode,133 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe4.1)".
+Warning (cgribexScanTimestep1) : Record 23 (id=31.128 lev1=0 lev2=0) timestep 1: Inconsistent verification time!
+cdo(3) selzaxis (Warning): Zaxis type hybrid not found!
+cdo(3) selzaxis (Abort): No variables selected!
+
+INFO:postproc:Post-processing target clivi in table CFday from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -daymean -selmon,1 -selcode,79
+INFO:postproc:Post-processing target hursmin in table day from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -daymin -expr,'var80=100.*exp(17.62*((var168-273.15)/(var168-30.03)-(var167-273.15)/(var167-30.03)))' -setgridtype,regular -selmon,1 -selcode,168,167
+INFO:postproc:Post-processing target clivi in table E3hr from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -selcode,79
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+INFO:postproc:Post-processing target ua in table CFday from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -sp2gpl -daymean -selzaxis,hybrid -selmon,1 -selcode,131
+ERROR:cdoapi:(returncode:1) cdo sp2gpl: Started child process "daymean -selzaxis,hybrid -selmon,1 -selcode,131 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe1.1)".
+cdo(2) daymean: Started child process "selzaxis,hybrid -selmon,1 -selcode,131 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe2.1)".
+cdo(3) selzaxis: Started child process "selmon,1 -selcode,131 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe3.1)".
+cdo(4) selmonth: Started child process "selcode,131 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe4.1)".
+cdo(3) selzaxis (Warning): Zaxis type hybrid not found!
+cdo(3) selzaxis (Abort): No variables selected!
+
+INFO:postproc:Post-processing target prc in table day from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -daymean -selmon,1 -selcode,143
+INFO:postproc:Post-processing target tas in table day from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -daymean -selmon,1 -selcode,167
+INFO:postproc:Post-processing target ta27 in table 6hrPlevPt from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -sp2gpl -selhour,0,6,12,18 -selcode,130
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+INFO:postproc:Post-processing target prsn in table day from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -daymean -selmon,1 -selcode,144
+INFO:postproc:Post-processing target tauv in table Eday from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -daymean -selmon,1 -selcode,181
+INFO:postproc:Post-processing target snc in table day from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -daymean -expr,'var119=100*(var141>0)' -setgridtype,regular -selmon,1 -selcode,141
+INFO:postproc:Post-processing target vas in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -monmean -selmon,1 -selcode,166
+INFO:postproc:Post-processing target prc in table 3hr from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -selcode,143
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+INFO:postproc:Post-processing target sfcWind in table 6hrPlevPt from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -expr,'var214=sqrt(sqr(var165)+sqr(var166))' -setgridtype,regular -selhour,0,6,12,18 -selcode,165,166
+INFO:postproc:Post-processing target vas in table day from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -daymean -selmon,1 -selcode,166
+INFO:postproc:Post-processing target mrros in table Eday from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -daymean -selmon,1 -selcode,8
+ERROR:cdoapi:(returncode:1) cdo setgridtype: Started child process "daymean -selmon,1 -selcode,8 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe1.1)".
+cdo(2) daymean: Started child process "selmon,1 -selcode,8 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe2.1)".
+cdo(3) selmonth: Started child process "selcode,8 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe3.1)".
+Warning (cgribexScanTimestep1) : Record 23 (id=31.128 lev1=0 lev2=0) timestep 1: Inconsistent verification time!
+cdo(4) selcode (Warning): Code number 8 not found!
+cdo(4) selcode (Abort): No variables selected!
+
+INFO:postproc:Post-processing target hfss in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -monmean -selmon,1 -selcode,146
+INFO:postproc:Post-processing target rsutcs in table E3hr from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -expr,'var103=var212-var208' -setgridtype,regular -selcode,208,212
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+INFO:postproc:Post-processing target t2 in table Emon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -monmean -expr,'var110=var130*var130' -sp2gpl -selzaxis,hybrid -selmon,1 -selcode,130
+ERROR:cdoapi:(returncode:1) cdo monmean: Started child process "expr,var110=var130*var130 -sp2gpl -selzaxis,hybrid -selmon,1 -selcode,130 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe1.1)".
+cdo(2) expr: Started child process "sp2gpl -selzaxis,hybrid -selmon,1 -selcode,130 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe2.1)".
+cdo(3) sp2gpl: Started child process "selzaxis,hybrid -selmon,1 -selcode,130 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe3.1)".
+cdo(4) selzaxis: Started child process "selmon,1 -selcode,130 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe4.1)".
+cdo(5) selmonth: Started child process "selcode,130 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe5.1)".
+cdo(4) selzaxis (Warning): Zaxis type hybrid not found!
+cdo(4) selzaxis (Abort): No variables selected!
+
+INFO:postproc:Post-processing target tas in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -monmean -selmon,1 -selcode,167
+INFO:postproc:Post-processing target cl in table CFday from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -daymean -selzaxis,hybrid -selmon,1 -selcode,248
+ERROR:cdoapi:(returncode:1) cdo setgridtype: Started child process "daymean -selzaxis,hybrid -selmon,1 -selcode,248 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe1.1)".
+cdo(2) daymean: Started child process "selzaxis,hybrid -selmon,1 -selcode,248 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe2.1)".
+cdo(3) selzaxis: Started child process "selmon,1 -selcode,248 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe3.1)".
+cdo(4) selmonth: Started child process "selcode,248 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe4.1)".
+Warning (cgribexScanTimestep1) : Record 23 (id=31.128 lev1=0 lev2=0) timestep 1: Inconsistent verification time!
+cdo(5) selcode (Warning): Code number 248 not found!
+cdo(5) selcode (Abort): No variables selected!
+
+INFO:postproc:Post-processing target rlds in table day from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -daymean -selmon,1 -selcode,175
+INFO:postproc:Post-processing target rlut in table day from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -daymean -expr,'var105=-var179' -setgridtype,regular -selmon,1 -selcode,179
+INFO:postproc:Post-processing target tas in table 3hr from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -selcode,167
+INFO:postproc:Post-processing target wap4 in table 6hrPlev from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -sp2gpl -selcode,135
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+ERROR:cdoapi:(returncode:1) cdo sp2gpl: Started child process "selcode,135 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe1.1)".
+cdo(2) selcode (Warning): Code number 135 not found!
+cdo(2) selcode (Abort): No variables selected!
+
+INFO:postproc:Post-processing target hursmax in table day from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -daymax -expr,'var80=100.*exp(17.62*((var168-273.15)/(var168-30.03)-(var167-273.15)/(var167-30.03)))' -setgridtype,regular -selmon,1 -selcode,168,167
+INFO:postproc:Post-processing target sfcWind in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -monmean -expr,'var214=sqrt(sqr(var165)+sqr(var166))' -setgridtype,regular -selmon,1 -selcode,165,166
+INFO:postproc:Post-processing target psl in table 6hrPlev from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -selcode,151
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+INFO:postproc:Post-processing target wap in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -sp2gpl -monmean -selmon,1 -selcode,135
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+ERROR:cdoapi:(returncode:1) cdo sp2gpl: Started child process "monmean -selmon,1 -selcode,135 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe1.1)".
+cdo(2) monmean: Started child process "selmon,1 -selcode,135 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe2.1)".
+cdo(3) selmonth: Started child process "selcode,135 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe3.1)".
+cdo(4) selcode (Warning): Code number 135 not found!
+cdo(4) selcode (Abort): No variables selected!
+
+INFO:postproc:Post-processing target ua in table day from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -sp2gpl -daymean -selmon,1 -selcode,131
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+INFO:postproc:Post-processing target rsutcs in table CFday from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -daymean -expr,'var103=var212-var208' -setgridtype,regular -selmon,1 -selcode,208,212
+INFO:postproc:Post-processing target va7h in table 6hrPlevPt from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -sp2gpl -selhour,0,6,12,18 -selcode,132
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+INFO:postproc:Post-processing target rlds in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -monmean -selmon,1 -selcode,175
+INFO:postproc:Post-processing target mrro in table 3hr from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -selcode,205
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+INFO:postproc:Post-processing target rldscs in table CFday from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -daymean -expr,'var104=var211-var177+var175' -setgridtype,regular -selmon,1 -selcode,177,211,175
+INFO:postproc:Post-processing target ts in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -monmean -selmon,1 -selcode,139
+INFO:postproc:Post-processing target mrsos in table Lmon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -monmean -expr,'var99=70*var39+30*var40' -setgridtype,regular -selmon,1 -selcode,40,39
+INFO:postproc:Post-processing target uv in table Emon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -monmean -expr,'var109=var131*var132' -sp2gpl -selzaxis,hybrid -selmon,1 -selcode,131,132
+ERROR:cdoapi:(returncode:1) cdo monmean: Started child process "expr,var109=var131*var132 -sp2gpl -selzaxis,hybrid -selmon,1 -selcode,131,132 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe1.1)".
+cdo(2) expr: Started child process "sp2gpl -selzaxis,hybrid -selmon,1 -selcode,131,132 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe2.1)".
+cdo(3) sp2gpl: Started child process "selzaxis,hybrid -selmon,1 -selcode,131,132 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe3.1)".
+cdo(4) selzaxis: Started child process "selmon,1 -selcode,131,132 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe4.1)".
+cdo(5) selmonth: Started child process "selcode,131,132 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe5.1)".
+cdo(4) selzaxis (Warning): Zaxis type hybrid not found!
+cdo(4) selzaxis (Abort): No variables selected!
+
+INFO:postproc:Post-processing target psl in table day from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -daymean -selmon,1 -selcode,151
+INFO:postproc:Post-processing target hurs in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -monmean -expr,'var80=100.*exp(17.62*((var168-273.15)/(var168-30.03)-(var167-273.15)/(var167-30.03)))' -setgridtype,regular -selmon,1 -selcode,168,167
+INFO:postproc:Post-processing target rlutcs in table E3hr from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -expr,'var106=-var209' -setgridtype,regular -selcode,209
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+INFO:postproc:Post-processing target snc in table LImon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -monmean -expr,'var119=100*(var141>0)' -setgridtype,regular -selmon,1 -selcode,141
+INFO:postproc:Post-processing target rlut in table E3hr from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -expr,'var105=-var179' -setgridtype,regular -selcode,179
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+INFO:postproc:Post-processing target hur in table CFmon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -sp2gpl -monmean -selzaxis,hybrid -selmon,1 -selcode,157
+ERROR:cdoapi:(returncode:1) cdo sp2gpl: Started child process "monmean -selzaxis,hybrid -selmon,1 -selcode,157 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe1.1)".
+cdo(2) monmean: Started child process "selzaxis,hybrid -selmon,1 -selcode,157 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe2.1)".
+cdo(3) selzaxis: Started child process "selmon,1 -selcode,157 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe3.1)".
+cdo(4) selmonth: Started child process "selcode,157 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe4.1)".
+cdo(5) selcode (Warning): Code number 157 not found!
+cdo(5) selcode (Abort): No variables selected!
+
+INFO:postproc:Post-processing target hus in table CFday from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -daymean -selzaxis,hybrid -selmon,1 -selcode,133
+ERROR:cdoapi:(returncode:1) cdo setgridtype: Started child process "daymean -selzaxis,hybrid -selmon,1 -selcode,133 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe1.1)".
+cdo(2) daymean: Started child process "selzaxis,hybrid -selmon,1 -selcode,133 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe2.1)".
+cdo(3) selzaxis: Started child process "selmon,1 -selcode,133 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe3.1)".
+cdo(4) selmonth: Started child process "selcode,133 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe4.1)".
+Warning (cgribexScanTimestep1) : Record 23 (id=31.128 lev1=0 lev2=0) timestep 1: Inconsistent verification time!
+cdo(3) selzaxis (Warning): Zaxis type hybrid not found!
+cdo(3) selzaxis (Abort): No variables selected!
+
+INFO:postproc:Post-processing target zg in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -sp2gpl -monmean -selmon,1 -selcode,129
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+INFO:postproc:Post-processing target zg27 in table Emon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -sp2gpl -monmean -selmon,1 -selcode,129
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+INFO:postproc:Post-processing target rlus in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -monmean -expr,'var96=var175-var177' -setgridtype,regular -selmon,1 -selcode,177,175
+INFO:postproc:Post-processing target tasmin in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -monmean -daymin -setgridtype,regular -selmon,1 -selcode,202
+INFO:postproc:Post-processing target prsn in table 3hr from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -selcode,144
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+INFO:postproc:Post-processing target tauv in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -monmean -selmon,1 -selcode,181
+INFO:postproc:Post-processing target tas in table 6hrPlevPt from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -selhour,0,6,12,18 -selcode,167
+INFO:postproc:Post-processing target sfcWind in table day from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -daymean -expr,'var214=sqrt(sqr(var165)+sqr(var166))' -setgridtype,regular -selmon,1 -selcode,165,166
+INFO:postproc:Post-processing target wap in table Emon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -sp2gpl -monmean -selzaxis,hybrid -selmon,1 -selcode,135
+INFO:postproc:Post-processing target wap2 in table Emon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -sp2gpl -monmean -selzaxis,hybrid -selmon,1 -selcode,135
+ERROR:cdoapi:(returncode:1) cdo sp2gpl: Started child process "monmean -selzaxis,hybrid -selmon,1 -selcode,135 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe1.1)".
+cdo(2) monmean: Started child process "selzaxis,hybrid -selmon,1 -selcode,135 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe2.1)".
+cdo(3) selzaxis: Started child process "selmon,1 -selcode,135 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe3.1)".
+cdo(4) selmonth: Started child process "selcode,135 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe4.1)".
+cdo(5) selcode (Warning): Code number 135 not found!
+cdo(5) selcode (Abort): No variables selected!
+
+INFO:postproc:Post-processing target rsdt in table E3hr from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -selcode,212
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+INFO:postproc:Post-processing target huss in table day from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -daymean -expr,'var81=1./(1.+1.608*(var134*exp(-17.62*(var168-273.15)/(var168-30.03))/611.-1.))' -setgridtype,regular -selmon,1 -selcode,168,134
+ERROR:cdoapi:(returncode:1) cdo daymean: Started child process "expr,var81=1./(1.+1.608*(var134*exp(-17.62*(var168-273.15)/(var168-30.03))/611.-1.)) -setgridtype,regular -selmon,1 -selcode,168,134 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe1.1)".
+cdo(2) expr: Started child process "setgridtype,regular -selmon,1 -selcode,168,134 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe2.1)".
+cdo(3) setgridtype: Started child process "selmon,1 -selcode,168,134 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe3.1)".
+cdo(4) selmonth: Started child process "selcode,168,134 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe4.1)".
+Warning (cgribexScanTimestep1) : Record 23 (id=31.128 lev1=0 lev2=0) timestep 1: Inconsistent verification time!
+cdo(5) selcode (Warning): Code number 134 not found!
+cdo(2) expr (Abort): Variable >var134< not found!
+Error (file_fill_buffer) : 
+INFO:postproc:Post-processing target zg27 in table 6hrPlevPt from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -sp2gpl -selhour,0,6,12,18 -selcode,129
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+INFO:postproc:Post-processing target clt in table day from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -daymean -selmon,1 -selcode,164
+INFO:postproc:Post-processing target mrsos in table 6hrPlevPt from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -expr,'var99=70*var39+30*var40' -setgridtype,regular -selhour,0,6,12,18 -selcode,40,39
+INFO:postproc:Post-processing target ta in table CFday from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -sp2gpl -daymean -selzaxis,hybrid -selmon,1 -selcode,130
+ERROR:cdoapi:(returncode:1) cdo sp2gpl: Started child process "daymean -selzaxis,hybrid -selmon,1 -selcode,130 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe1.1)".
+cdo(2) daymean: Started child process "selzaxis,hybrid -selmon,1 -selcode,130 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe2.1)".
+cdo(3) selzaxis: Started child process "selmon,1 -selcode,130 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe3.1)".
+cdo(4) selmonth: Started child process "selcode,130 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe4.1)".
+cdo(3) selzaxis (Warning): Zaxis type hybrid not found!
+cdo(3) selzaxis (Abort): No variables selected!
+
+INFO:postproc:Post-processing target hur in table day from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -sp2gpl -daymean -selmon,1 -selcode,157
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+ERROR:cdoapi:(returncode:1) cdo sp2gpl: Started child process "daymean -selmon,1 -selcode,157 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe1.1)".
+cdo(2) daymean: Started child process "selmon,1 -selcode,157 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe2.1)".
+cdo(3) selmonth: Started child process "selcode,157 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe3.1)".
+cdo(4) selcode (Warning): Code number 157 not found!
+cdo(4) selcode (Abort): No variables selected!
+
+INFO:postproc:Post-processing target hus in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -monmean -selmon,1 -selcode,133
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+INFO:postproc:Post-processing target hus27 in table Emon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -monmean -selmon,1 -selcode,133
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+INFO:postproc:Post-processing target rsds in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -monmean -selmon,1 -selcode,169
+INFO:postproc:Post-processing target snd in table LImon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -monmean -expr,'var115=1000*var141/var33' -setgridtype,regular -selmon,1 -selcode,33,141
+INFO:postproc:Post-processing target tasmax in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -monmean -daymax -setgridtype,regular -selmon,1 -selcode,201
+INFO:postproc:Post-processing target rlut in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -monmean -expr,'var105=-var179' -setgridtype,regular -selmon,1 -selcode,179
+INFO:postproc:Post-processing target snw in table day from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -daymean -selmon,1 -selcode,141
+INFO:postproc:Post-processing target lwsnl in table Eday from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -daymean -selmon,1 -selcode,141
+INFO:postproc:Post-processing target hfls in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -monmean -selmon,1 -selcode,147
+INFO:postproc:Post-processing target va in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -sp2gpl -monmean -selmon,1 -selcode,132
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+INFO:postproc:Post-processing target va27 in table Emon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -sp2gpl -monmean -selmon,1 -selcode,132
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+INFO:postproc:Post-processing target rsut in table CFday from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -daymean -expr,'var97=var212-var178' -setgridtype,regular -selmon,1 -selcode,178,212
+INFO:postproc:Post-processing target vt in table Emon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -monmean -expr,'var101=var132*var130' -sp2gpl -selzaxis,hybrid -selmon,1 -selcode,130,132
+ERROR:cdoapi:(returncode:1) cdo monmean: Started child process "expr,var101=var132*var130 -sp2gpl -selzaxis,hybrid -selmon,1 -selcode,130,132 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe1.1)".
+cdo(2) expr: Started child process "sp2gpl -selzaxis,hybrid -selmon,1 -selcode,130,132 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe2.1)".
+cdo(3) sp2gpl: Started child process "selzaxis,hybrid -selmon,1 -selcode,130,132 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe3.1)".
+cdo(4) selzaxis: Started child process "selmon,1 -selcode,130,132 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe4.1)".
+cdo(5) selmonth: Started child process "selcode,130,132 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe5.1)".
+cdo(4) selzaxis (Warning): Zaxis type hybrid not found!
+cdo(4) selzaxis (Abort): No variables selected!
+
+INFO:postproc:Post-processing target pr in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -monmean -selmon,1 -selcode,228
+ERROR:cdoapi:(returncode:1) cdo setgridtype: Started child process "monmean -selmon,1 -selcode,228 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe1.1)".
+cdo(2) monmean: Started child process "selmon,1 -selcode,228 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe2.1)".
+cdo(3) selmonth: Started child process "selcode,228 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe3.1)".
+Warning (cgribexScanTimestep1) : Record 23 (id=31.128 lev1=0 lev2=0) timestep 1: Inconsistent verification time!
+cdo(4) selcode (Warning): Code number 228 not found!
+cdo(4) selcode (Abort): No variables selected!
+
+INFO:postproc:Post-processing target vortmean in table 6hrPlevPt from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -sp2gpl -selhour,0,6,12,18 -selcode,138
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+ERROR:cdoapi:(returncode:1) cdo sp2gpl: Started child process "selhour,0,6,12,18 -selcode,138 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe1.1)".
+cdo(2) selhour: Started child process "selcode,138 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe2.1)".
+cdo(3) selcode (Warning): Code number 138 not found!
+cdo(3) selcode (Abort): No variables selected!
+
+INFO:postproc:Post-processing target clivi in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -monmean -selmon,1 -selcode,79
+INFO:postproc:Post-processing target rlds in table 3hr from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -selcode,175
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+INFO:postproc:Post-processing target ta700 in table CFday from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -sp2gpl -daymean -sellevel,70000. -selzaxis,pressure -selmon,1 -selcode,130
+INFO:postproc:Post-processing target rsdt in table CFday from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -daymean -selmon,1 -selcode,212
+INFO:postproc:Post-processing target rsus in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -monmean -expr,'var95=var169-var176' -setgridtype,regular -selmon,1 -selcode,176,169
+INFO:postproc:Post-processing target rsuscs in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -monmean -expr,'var95=var169-var176' -setgridtype,regular -selmon,1 -selcode,176,169
+INFO:postproc:Post-processing target snm in table LImon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -monmean -selmon,1 -selcode,45
+ERROR:cdoapi:(returncode:1) cdo setgridtype: Started child process "monmean -selmon,1 -selcode,45 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe1.1)".
+cdo(2) monmean: Started child process "selmon,1 -selcode,45 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe2.1)".
+cdo(3) selmonth: Started child process "selcode,45 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe3.1)".
+Warning (cgribexScanTimestep1) : Record 23 (id=31.128 lev1=0 lev2=0) timestep 1: Inconsistent verification time!
+cdo(4) selcode (Warning): Code number 45 not found!
+cdo(4) selcode (Abort): No variables selected!
+
+INFO:postproc:Post-processing target hfls in table 3hr from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -selcode,147
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+INFO:postproc:Post-processing target mrsos in table 3hr from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -expr,'var99=70*var39+30*var40' -setgridtype,regular -selcode,40,39
+INFO:postproc:Post-processing target rlutcs in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -monmean -expr,'var106=-var209' -setgridtype,regular -selmon,1 -selcode,209
+INFO:postproc:Post-processing target evspsblsoi in table Lmon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -monmean -expr,'var114=var182-var44' -setgridtype,regular -selmon,1 -selcode,44,182
+ERROR:cdoapi:(returncode:1) cdo monmean: Started child process "expr,var114=var182-var44 -setgridtype,regular -selmon,1 -selcode,44,182 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe1.1)".
+cdo(2) expr: Started child process "setgridtype,regular -selmon,1 -selcode,44,182 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe2.1)".
+cdo(3) setgridtype: Started child process "selmon,1 -selcode,44,182 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe3.1)".
+cdo(4) selmonth: Started child process "selcode,44,182 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe4.1)".
+Warning (cgribexScanTimestep1) : Record 23 (id=31.128 lev1=0 lev2=0) timestep 1: Inconsistent verification time!
+cdo(5) selcode (Warning): Code number 44 not found!
+cdo(2) expr (Abort): Variable >var44< not found!
+
+INFO:postproc:Post-processing target rsdscs in table CFday from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -daymean -expr,'var102=var210-var176+var169' -setgridtype,regular -selmon,1 -selcode,176,169,210
+INFO:postproc:Post-processing target rlus in table 3hr from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -expr,'var96=var175-var177' -setgridtype,regular -selcode,177,175
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+INFO:postproc:Post-processing target prsn in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -monmean -selmon,1 -selcode,144
+INFO:postproc:Post-processing target clwvi in table E3hr from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -expr,'var116=var78+var79' -setgridtype,regular -selcode,78,79
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+INFO:postproc:Post-processing target huss in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -monmean -expr,'var81=1./(1.+1.608*(var134*exp(-17.62*(var168-273.15)/(var168-30.03))/611.-1.))' -setgridtype,regular -selmon,1 -selcode,168,134
+ERROR:cdoapi:(returncode:1) cdo monmean: Started child process "expr,var81=1./(1.+1.608*(var134*exp(-17.62*(var168-273.15)/(var168-30.03))/611.-1.)) -setgridtype,regular -selmon,1 -selcode,168,134 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe1.1)".
+cdo(2) expr: Started child process "setgridtype,regular -selmon,1 -selcode,168,134 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe2.1)".
+cdo(3) setgridtype: Started child process "selmon,1 -selcode,168,134 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe3.1)".
+cdo(4) selmonth: Started child process "selcode,168,134 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe4.1)".
+Warning (cgribexScanTimestep1) : Record 23 (id=31.128 lev1=0 lev2=0) timestep 1: Inconsistent verification time!
+cdo(5) selcode (Warning): Code number 134 not found!
+cdo(2) expr (Abort): Variable >var134< not found!
+
+INFO:postproc:Post-processing target cl in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -monmean -selzaxis,hybrid -selmon,1 -selcode,248
+ERROR:cdoapi:(returncode:1) cdo setgridtype: Started child process "monmean -selzaxis,hybrid -selmon,1 -selcode,248 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe1.1)".
+cdo(2) monmean: Started child process "selzaxis,hybrid -selmon,1 -selcode,248 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe2.1)".
+cdo(3) selzaxis: Started child process "selmon,1 -selcode,248 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe3.1)".
+cdo(4) selmonth: Started child process "selcode,248 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe4.1)".
+Warning (cgribexScanTimestep1) : Record 23 (id=31.128 lev1=0 lev2=0) timestep 1: Inconsistent verification time!
+cdo(5) selcode (Warning): Code number 248 not found!
+cdo(5) selcode (Abort): No variables selected!
+
+INFO:postproc:Post-processing target pr in table day from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -daymean -selmon,1 -selcode,228
+ERROR:cdoapi:(returncode:1) cdo setgridtype: Started child process "daymean -selmon,1 -selcode,228 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe1.1)".
+cdo(2) daymean: Started child process "selmon,1 -selcode,228 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe2.1)".
+cdo(3) selmonth: Started child process "selcode,228 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe3.1)".
+Warning (cgribexScanTimestep1) : Record 23 (id=31.128 lev1=0 lev2=0) timestep 1: Inconsistent verification time!
+cdo(4) selcode (Warning): Code number 228 not found!
+cdo(4) selcode (Abort): No variables selected!
+
+INFO:postproc:Post-processing target ta in table day from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -sp2gpl -daymean -selmon,1 -selcode,130
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+INFO:postproc:Post-processing target rsdscs in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -monmean -expr,'var102=var210-var176+var169' -setgridtype,regular -selmon,1 -selcode,176,169,210
+INFO:postproc:Post-processing target hfdsn in table LImon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -monmean -expr,'var120=(var141>0)*(var146+var147)' -setgridtype,regular -selmon,1 -selcode,146,147,141
+INFO:postproc:Post-processing target rsds in table 3hr from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -selcode,169
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+INFO:postproc:Post-processing target uwap in table Emon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -monmean -expr,'var111=var131*var135' -sp2gpl -selzaxis,hybrid -selmon,1 -selcode,131,135
+ERROR:cdoapi:(returncode:1) cdo monmean: Started child process "expr,var111=var131*var135 -sp2gpl -selzaxis,hybrid -selmon,1 -selcode,131,135 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe1.1)".
+cdo(2) expr: Started child process "sp2gpl -selzaxis,hybrid -selmon,1 -selcode,131,135 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe2.1)".
+cdo(3) sp2gpl: Started child process "selzaxis,hybrid -selmon,1 -selcode,131,135 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe3.1)".
+cdo(4) selzaxis: Started child process "selmon,1 -selcode,131,135 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe4.1)".
+cdo(5) selmonth: Started child process "selcode,131,135 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe5.1)".
+cdo(6) selcode (Warning): Code number 135 not found!
+cdo(4) selzaxis (Warning): Zaxis type hybrid not found!
+cdo(4) selzaxis (Abort): No variables selected!
+
+INFO:postproc:Post-processing target pfull in table CFday from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -sp2gpl -daymean -selzaxis,hybrid -selmon,1 -selcode,54
+ERROR:cdoapi:(returncode:1) cdo sp2gpl: Started child process "daymean -selzaxis,hybrid -selmon,1 -selcode,54 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe1.1)".
+cdo(2) daymean: Started child process "selzaxis,hybrid -selmon,1 -selcode,54 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe2.1)".
+cdo(3) selzaxis: Started child process "selmon,1 -selcode,54 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe3.1)".
+cdo(4) selmonth: Started child process "selcode,54 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe4.1)".
+cdo(5) selcode (Warning): Code number 54 not found!
+cdo(5) selcode (Abort): No variables selected!
+
+INFO:postproc:Post-processing target vas in table 6hrPlevPt from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -selhour,0,6,12,18 -selcode,166
+INFO:postproc:Post-processing target rsutcs in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -monmean -expr,'var103=var212-var208' -setgridtype,regular -selmon,1 -selcode,208,212
+INFO:postproc:Post-processing target prc in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -monmean -selmon,1 -selcode,143
+INFO:postproc:Post-processing target snd in table Eday from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -daymean -expr,'var115=1000*var141/var33' -setgridtype,regular -selmon,1 -selcode,33,141
+INFO:postproc:Post-processing target clw in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -monmean -selzaxis,hybrid -selmon,1 -selcode,246
+ERROR:cdoapi:(returncode:1) cdo setgridtype: Started child process "monmean -selzaxis,hybrid -selmon,1 -selcode,246 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe1.1)".
+cdo(2) monmean: Started child process "selzaxis,hybrid -selmon,1 -selcode,246 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe2.1)".
+cdo(3) selzaxis: Started child process "selmon,1 -selcode,246 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe3.1)".
+cdo(4) selmonth: Started child process "selcode,246 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe4.1)".
+Warning (cgribexScanTimestep1) : Record 23 (id=31.128 lev1=0 lev2=0) timestep 1: Inconsistent verification time!
+cdo(5) selcode (Warning): Code number 246 not found!
+cdo(5) selcode (Abort): No variables selected!
+
+INFO:postproc:Post-processing target tauu in table Eday from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -daymean -selmon,1 -selcode,180
+INFO:postproc:Post-processing target sfcWindmax in table day from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -daymax -expr,'var214=sqrt(sqr(var165)+sqr(var166))' -setgridtype,regular -selmon,1 -selcode,165,166
+INFO:postproc:Post-processing target rsus in table 3hr from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -expr,'var95=var169-var176' -setgridtype,regular -selcode,176,169
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+INFO:postproc:Post-processing target rsuscs in table 3hr from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -expr,'var95=var169-var176' -setgridtype,regular -selcode,176,169
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+INFO:postproc:Post-processing target rsut in table E3hr from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -expr,'var97=var212-var178' -setgridtype,regular -selcode,178,212
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+INFO:postproc:Post-processing target vwap in table Emon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -monmean -expr,'var112=var132*var135' -sp2gpl -selzaxis,hybrid -selmon,1 -selcode,132,135
+ERROR:cdoapi:(returncode:1) cdo monmean: Started child process "expr,var112=var132*var135 -sp2gpl -selzaxis,hybrid -selmon,1 -selcode,132,135 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe1.1)".
+cdo(2) expr: Started child process "sp2gpl -selzaxis,hybrid -selmon,1 -selcode,132,135 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe2.1)".
+cdo(3) sp2gpl: Started child process "selzaxis,hybrid -selmon,1 -selcode,132,135 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe3.1)".
+cdo(4) selzaxis: Started child process "selmon,1 -selcode,132,135 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe4.1)".
+cdo(5) selmonth: Started child process "selcode,132,135 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe5.1)".
+cdo(6) selcode (Warning): Code number 135 not found!
+cdo(4) selzaxis (Warning): Zaxis type hybrid not found!
+cdo(4) selzaxis (Abort): No variables selected!
+
+INFO:postproc:Post-processing target rldscs in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -monmean -expr,'var104=var211-var177+var175' -setgridtype,regular -selmon,1 -selcode,177,211,175
+INFO:postproc:Post-processing target v2 in table Emon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -monmean -expr,'var108=var132*var132' -sp2gpl -selzaxis,hybrid -selmon,1 -selcode,132
+ERROR:cdoapi:(returncode:1) cdo monmean: Started child process "expr,var108=var132*var132 -sp2gpl -selzaxis,hybrid -selmon,1 -selcode,132 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe1.1)".
+cdo(2) expr: Started child process "sp2gpl -selzaxis,hybrid -selmon,1 -selcode,132 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe2.1)".
+cdo(3) sp2gpl: Started child process "selzaxis,hybrid -selmon,1 -selcode,132 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe3.1)".
+cdo(4) selzaxis: Started child process "selmon,1 -selcode,132 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe4.1)".
+cdo(5) selmonth: Started child process "selcode,132 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe5.1)".
+cdo(4) selzaxis (Warning): Zaxis type hybrid not found!
+cdo(4) selzaxis (Abort): No variables selected!
+
+INFO:postproc:Post-processing target rsus in table day from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -daymean -expr,'var95=var169-var176' -setgridtype,regular -selmon,1 -selcode,176,169
+INFO:postproc:Post-processing target rsuscs in table CFday from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -daymean -expr,'var95=var169-var176' -setgridtype,regular -selmon,1 -selcode,176,169
+INFO:postproc:Post-processing target snm in table Eday from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -daymean -selmon,1 -selcode,45
+ERROR:cdoapi:(returncode:1) cdo setgridtype: Started child process "daymean -selmon,1 -selcode,45 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe1.1)".
+cdo(2) daymean: Started child process "selmon,1 -selcode,45 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe2.1)".
+cdo(3) selmonth: Started child process "selcode,45 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe3.1)".
+Warning (cgribexScanTimestep1) : Record 23 (id=31.128 lev1=0 lev2=0) timestep 1: Inconsistent verification time!
+cdo(4) selcode (Warning): Code number 45 not found!
+cdo(4) selcode (Abort): No variables selected!
+
+INFO:postproc:Post-processing target ua in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -sp2gpl -monmean -selmon,1 -selcode,131
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+INFO:postproc:Post-processing target ua27 in table Emon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -sp2gpl -monmean -selmon,1 -selcode,131
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+INFO:postproc:Post-processing target rlus in table day from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -daymean -expr,'var96=var175-var177' -setgridtype,regular -selmon,1 -selcode,177,175
+INFO:postproc:Post-processing target uas in table 6hrPlevPt from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -selhour,0,6,12,18 -selcode,165
+INFO:postproc:Post-processing target mrro in table day from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -daymean -selmon,1 -selcode,205
+INFO:postproc:Post-processing target pr in table 3hr from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -selcode,228
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+ERROR:cdoapi:(returncode:1) cdo setgridtype: Started child process "selcode,228 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe1.1)".
+Warning (cgribexScanTimestep1) : Record 23 (id=31.128 lev1=0 lev2=0) timestep 1: Inconsistent verification time!
+cdo(2) selcode (Warning): Code number 228 not found!
+cdo(2) selcode (Abort): No variables selected!
+
+INFO:postproc:Post-processing target uas in table 3hr from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -selcode,165
+INFO:postproc:Post-processing target evspsbl in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -monmean -selmon,1 -selcode,182
+INFO:postproc:Post-processing target wap in table day from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -sp2gpl -daymean -selmon,1 -selcode,135
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+INFO:postproc:Post-processing target wap500 in table CFday from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -sp2gpl -daymean -selmon,1 -selcode,135
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+ERROR:cdoapi:(returncode:1) cdo sp2gpl: Started child process "daymean -selmon,1 -selcode,135 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe1.1)".
+cdo(2) daymean: Started child process "selmon,1 -selcode,135 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe2.1)".
+cdo(3) selmonth: Started child process "selcode,135 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe3.1)".
+cdo(4) selcode (Warning): Code number 135 not found!
+cdo(4) selcode (Abort): No variables selected!
+
+INFO:postproc:Post-processing target cli in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -monmean -selzaxis,hybrid -selmon,1 -selcode,247
+ERROR:cdoapi:(returncode:1) cdo setgridtype: Started child process "monmean -selzaxis,hybrid -selmon,1 -selcode,247 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe1.1)".
+cdo(2) monmean: Started child process "selzaxis,hybrid -selmon,1 -selcode,247 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe2.1)".
+cdo(3) selzaxis: Started child process "selmon,1 -selcode,247 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe3.1)".
+cdo(4) selmonth: Started child process "selcode,247 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe4.1)".
+Warning (cgribexScanTimestep1) : Record 23 (id=31.128 lev1=0 lev2=0) timestep 1: Inconsistent verification time!
+cdo(5) selcode (Warning): Code number 247 not found!
+cdo(5) selcode (Abort): No variables selected!
+
+INFO:postproc:Post-processing target uas in table day from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -daymean -selmon,1 -selcode,165
+INFO:postproc:Post-processing target rsdt in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -monmean -selmon,1 -selcode,212
+INFO:postproc:Post-processing target clt in table 3hr from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -selcode,164
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+INFO:postproc:Post-processing target clw in table CFday from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -daymean -selzaxis,hybrid -selmon,1 -selcode,246
+ERROR:cdoapi:(returncode:1) cdo setgridtype: Started child process "daymean -selzaxis,hybrid -selmon,1 -selcode,246 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe1.1)".
+cdo(2) daymean: Started child process "selzaxis,hybrid -selmon,1 -selcode,246 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe2.1)".
+cdo(3) selzaxis: Started child process "selmon,1 -selcode,246 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe3.1)".
+cdo(4) selmonth: Started child process "selcode,246 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe4.1)".
+Warning (cgribexScanTimestep1) : Record 23 (id=31.128 lev1=0 lev2=0) timestep 1: Inconsistent verification time!
+cdo(5) selcode (Warning): Code number 246 not found!
+cdo(5) selcode (Abort): No variables selected!
+
+INFO:postproc:Post-processing target huss in table 6hrPlevPt from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -expr,'var81=1./(1.+1.608*(var134*exp(-17.62*(var168-273.15)/(var168-30.03))/611.-1.))' -setgridtype,regular -selhour,0,6,12,18 -selcode,168,134
+ERROR:cdoapi:(returncode:1) cdo expr: Started child process "setgridtype,regular -selhour,0,6,12,18 -selcode,168,134 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe1.1)".
+cdo(2) setgridtype: Started child process "selhour,0,6,12,18 -selcode,168,134 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe2.1)".
+cdo(3) selhour: Started child process "selcode,168,134 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe3.1)".
+Warning (cgribexScanTimestep1) : Record 23 (id=31.128 lev1=0 lev2=0) timestep 1: Inconsistent verification time!
+cdo(4) selcode (Warning): Code number 134 not found!
+cdo expr (Abort): Variable >var134< not found!
+
+INFO:postproc:Post-processing target mrso in table Lmon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -monmean -expr,'var43=70*var39+210*var40+720*var41+1890*var42' -setgridtype,regular -selmon,1 -selcode,40,41,42,39
+INFO:postproc:Post-processing target va in table CFday from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -sp2gpl -daymean -selzaxis,hybrid -selmon,1 -selcode,132
+ERROR:cdoapi:(returncode:1) cdo sp2gpl: Started child process "daymean -selzaxis,hybrid -selmon,1 -selcode,132 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe1.1)".
+cdo(2) daymean: Started child process "selzaxis,hybrid -selmon,1 -selcode,132 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe2.1)".
+cdo(3) selzaxis: Started child process "selmon,1 -selcode,132 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe3.1)".
+cdo(4) selmonth: Started child process "selcode,132 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe4.1)".
+cdo(3) selzaxis (Warning): Zaxis type hybrid not found!
+cdo(3) selzaxis (Abort): No variables selected!
+
+INFO:postproc:Post-processing target ps in table AERmon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -monmean -expr,'var134=exp(var152)' -sp2gpl -selmon,1 -selcode,152
+INFO:postproc:Post-processing target vas in table 3hr from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -selcode,166
+INFO:postproc:Post-processing target clt in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -monmean -selmon,1 -selcode,164
+INFO:postproc:Post-processing target mrros in table Lmon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -monmean -selmon,1 -selcode,8
+ERROR:cdoapi:(returncode:1) cdo setgridtype: Started child process "monmean -selmon,1 -selcode,8 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe1.1)".
+cdo(2) monmean: Started child process "selmon,1 -selcode,8 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe2.1)".
+cdo(3) selmonth: Started child process "selcode,8 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe3.1)".
+Warning (cgribexScanTimestep1) : Record 23 (id=31.128 lev1=0 lev2=0) timestep 1: Inconsistent verification time!
+cdo(4) selcode (Warning): Code number 8 not found!
+cdo(4) selcode (Abort): No variables selected!
+
+INFO:postproc:Post-processing target sbl in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -monmean -selmon,1 -selcode,44
+INFO:postproc:Post-processing target sbl in table LImon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -monmean -selmon,1 -selcode,44
+ERROR:cdoapi:(returncode:1) cdo setgridtype: Started child process "monmean -selmon,1 -selcode,44 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe1.1)".
+cdo(2) monmean: Started child process "selmon,1 -selcode,44 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe2.1)".
+cdo(3) selmonth: Started child process "selcode,44 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe3.1)".
+Warning (cgribexScanTimestep1) : Record 23 (id=31.128 lev1=0 lev2=0) timestep 1: Inconsistent verification time!
+cdo(4) selcode (Warning): Code number 44 not found!
+cdo(4) selcode (Abort): No variables selected!
+
+INFO:postproc:Post-processing target ua7h in table 6hrPlevPt from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -sp2gpl -selhour,0,6,12,18 -selcode,131
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+INFO:postproc:Post-processing target ta in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -sp2gpl -monmean -selmon,1 -selcode,130
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+INFO:postproc:Post-processing target ta27 in table Emon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -sp2gpl -monmean -selmon,1 -selcode,130
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+INFO:postproc:Post-processing target ut in table Emon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -monmean -expr,'var100=var131*var130' -sp2gpl -selzaxis,hybrid -selmon,1 -selcode,130,131
+ERROR:cdoapi:(returncode:1) cdo monmean: Started child process "expr,var100=var131*var130 -sp2gpl -selzaxis,hybrid -selmon,1 -selcode,130,131 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe1.1)".
+cdo(2) expr: Started child process "sp2gpl -selzaxis,hybrid -selmon,1 -selcode,130,131 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe2.1)".
+cdo(3) sp2gpl: Started child process "selzaxis,hybrid -selmon,1 -selcode,130,131 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe3.1)".
+cdo(4) selzaxis: Started child process "selmon,1 -selcode,130,131 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe4.1)".
+cdo(5) selmonth: Started child process "selcode,130,131 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe5.1)".
+cdo(4) selzaxis (Warning): Zaxis type hybrid not found!
+cdo(4) selzaxis (Abort): No variables selected!
+
+INFO:postproc:Post-processing target rsut in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -monmean -expr,'var97=var212-var178' -setgridtype,regular -selmon,1 -selcode,178,212
+INFO:postproc:Post-processing target prw in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -monmean -selmon,1 -selcode,137
+INFO:postproc:Post-processing target huss in table 3hr from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -expr,'var81=1./(1.+1.608*(var134*exp(-17.62*(var168-273.15)/(var168-30.03))/611.-1.))' -setgridtype,regular -selcode,168,134
+ERROR:cdoapi:(returncode:1) cdo expr: Started child process "setgridtype,regular -selcode,168,134 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe1.1)".
+cdo(2) setgridtype: Started child process "selcode,168,134 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 (pipe2.1)".
+Warning (cgribexScanTimestep1) : Record 23 (id=31.128 lev1=0 lev2=0) timestep 1: Inconsistent verification time!
+cdo(3) selcode (Warning): Code number 134 not found!
+cdo expr (Abort): Variable >var134< not found!
+
+INFO:postproc:Post-processing target hus27 in table 6hrPlevPt from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -selhour,0,6,12,18 -selcode,133
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+INFO:postproc:Post-processing target psl in table 6hrPlevPt from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -selhour,0,6,12,18 -selcode,151
+INFO:postproc:Post-processing target ta in table CFmon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -sp2gpl -monmean -selzaxis,hybrid -selmon,1 -selcode,130
+ERROR:cdoapi:(returncode:1) cdo sp2gpl: Started child process "monmean -selzaxis,hybrid -selmon,1 -selcode,130 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe1.1)".
+cdo(2) monmean: Started child process "selzaxis,hybrid -selmon,1 -selcode,130 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe2.1)".
+cdo(3) selzaxis: Started child process "selmon,1 -selcode,130 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe3.1)".
+cdo(4) selmonth: Started child process "selcode,130 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe4.1)".
+cdo(3) selzaxis (Warning): Zaxis type hybrid not found!
+cdo(3) selzaxis (Abort): No variables selected!
+
+INFO:postproc:Post-processing target tsl in table Lmon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -setcode,117 -monmean -selmon,1 -selcode,170,139,236,183
+INFO:postproc:Post-processing target hfss in table 3hr from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -selcode,146
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+INFO:postproc:Post-processing target hus in table day from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -daymean -selmon,1 -selcode,133
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+INFO:postproc:Post-processing target mrro in table Lmon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -monmean -selmon,1 -selcode,205
+INFO:postproc:Post-processing target clwvi in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -monmean -expr,'var116=var78+var79' -setgridtype,regular -selmon,1 -selcode,78,79
+INFO:postproc:Post-processing target rlutcs in table CFday from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -daymean -expr,'var106=-var209' -setgridtype,regular -selmon,1 -selcode,209
+INFO:postproc:Post-processing target va in table day from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -sp2gpl -daymean -selmon,1 -selcode,132
+ERROR:cmor_task:Attempt to increase failed status for task ignored
+INFO:postproc:Post-processing target clwvi in table CFday from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -daymean -expr,'var116=var78+var79' -setgridtype,regular -selmon,1 -selcode,78,79
+INFO:postproc:Post-processing target zg in table CFday from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 with cdo command -sp2gpl -daymean -selzaxis,hybrid -selmon,1 -selcode,129
+ERROR:cdoapi:(returncode:1) cdo sp2gpl: Started child process "daymean -selzaxis,hybrid -selmon,1 -selcode,129 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe1.1)".
+cdo(2) daymean: Started child process "selzaxis,hybrid -selmon,1 -selcode,129 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe2.1)".
+cdo(3) selzaxis: Started child process "selmon,1 -selcode,129 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe3.1)".
+cdo(4) selmonth: Started child process "selcode,129 /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMSHsppt+199001 (pipe4.1)".
+cdo(3) selzaxis (Warning): Zaxis type hybrid not found!
+cdo(3) selzaxis (Abort): No variables selected!
+
+INFO:postproc:Post-processing target tauu in table Amon from file /scratch/ms/gb/ukyc/ECEARTH-RUNS/sppt/tmp_fixmonth/ICMGGsppt+199001 with cdo command -setgridtype,regular -monmean -selmon,1 -selcode,180
+INFO:ifs2cmor:Post-processed batch of 96 tasks.
+INFO:ifs2cmor:Cmorizing regular variables...
+INFO:ifs2cmor:Cmorizing 96 IFS tasks...
+INFO:ifs2cmor:Loading CMOR table 3hr...
+INFO:ifs2cmor:Creating time axes for table 3hr...
+INFO:ifs2cmor:Creating time axis using variable tslsi...
+INFO:ifs2cmor:Creating depth axes for table 3hr...
+INFO:ifs2cmor:Creating vertical axis for height2m...
+INFO:ifs2cmor:Creating vertical axis for sdepth1...
+INFO:ifs2cmor:Creating vertical axis for height10m...
+INFO:ifs2cmor:Cmorizing source variable 235 to target variable tslsi...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'tslsi' (table 3hr) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 134 to target variable ps...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'ps' (table 3hr) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 167 to target variable tas...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'tas' (table 3hr) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 99 to target variable mrsos...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'mrsos' (table 3hr) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 165 to target variable uas...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'uas' (table 3hr) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 166 to target variable vas...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'vas' (table 3hr) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Loading CMOR table Amon...
+INFO:ifs2cmor:Creating time axes for table Amon...
+INFO:ifs2cmor:Creating time axis using variable psl...
+INFO:ifs2cmor:Creating depth axes for table Amon...
+INFO:ifs2cmor:Creating vertical axis for height10m...
+INFO:ifs2cmor:Creating vertical axis for height2m...
+INFO:ifs2cmor:Cmorizing source variable 151 to target variable psl...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'psl' (table Amon) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 165 to target variable uas...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'uas' (table Amon) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 166 to target variable vas...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'vas' (table Amon) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 146 to target variable hfss...
+INFO:ifs2cmor:Cmorizing source variable 167 to target variable tas...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'tas' (table Amon) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 214 to target variable sfcWind...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'sfcWind' (table Amon) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 175 to target variable rlds...
+INFO:ifs2cmor:Cmorizing source variable 139 to target variable ts...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'ts' (table Amon) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 80 to target variable hurs...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'hurs' (table Amon) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 96 to target variable rlus...
+INFO:ifs2cmor:Cmorizing source variable 202 to target variable tasmin...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'tasmin' (table Amon) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 181 to target variable tauv...
+INFO:ifs2cmor:Cmorizing source variable 169 to target variable rsds...
+INFO:ifs2cmor:Cmorizing source variable 201 to target variable tasmax...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'tasmax' (table Amon) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 105 to target variable rlut...
+INFO:ifs2cmor:Cmorizing source variable 147 to target variable hfls...
+INFO:ifs2cmor:Cmorizing source variable 79 to target variable clivi...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'clivi' (table Amon) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 95 to target variable rsus...
+INFO:ifs2cmor:Cmorizing source variable 95 to target variable rsuscs...
+INFO:ifs2cmor:Cmorizing source variable 106 to target variable rlutcs...
+INFO:ifs2cmor:Cmorizing source variable 144 to target variable prsn...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'prsn' (table Amon) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 102 to target variable rsdscs...
+INFO:ifs2cmor:Cmorizing source variable 103 to target variable rsutcs...
+INFO:ifs2cmor:Cmorizing source variable 143 to target variable prc...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'prc' (table Amon) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 104 to target variable rldscs...
+INFO:ifs2cmor:Cmorizing source variable 182 to target variable evspsbl...
+INFO:ifs2cmor:Cmorizing source variable 212 to target variable rsdt...
+INFO:ifs2cmor:Cmorizing source variable 164 to target variable clt...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'clt' (table Amon) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 97 to target variable rsut...
+INFO:ifs2cmor:Cmorizing source variable 137 to target variable prw...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'prw' (table Amon) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 116 to target variable clwvi...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'clwvi' (table Amon) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 180 to target variable tauu...
+INFO:ifs2cmor:Loading CMOR table Eday...
+INFO:ifs2cmor:Creating time axes for table Eday...
+INFO:ifs2cmor:Creating time axis using variable tauv...
+INFO:ifs2cmor:Creating depth axes for table Eday...
+INFO:ifs2cmor:Cmorizing source variable 181 to target variable tauv...
+INFO:ifs2cmor:Cmorizing source variable 141 to target variable lwsnl...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'lwsnl' (table Eday) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 115 to target variable snd...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'snd' (table Eday) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 180 to target variable tauu...
+INFO:ifs2cmor:Loading CMOR table AERmon...
+INFO:ifs2cmor:Creating time axes for table AERmon...
+INFO:ifs2cmor:Creating time axis using variable ps...
+INFO:ifs2cmor:Creating depth axes for table AERmon...
+INFO:ifs2cmor:Cmorizing source variable 134 to target variable ps...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'ps' (table AERmon) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Loading CMOR table CFday...
+INFO:ifs2cmor:Creating time axes for table CFday...
+INFO:ifs2cmor:Creating time axis using variable clivi...
+INFO:ifs2cmor:Creating depth axes for table CFday...
+INFO:ifs2cmor:Creating vertical axis for p700...
+INFO:ifs2cmor:Cmorizing source variable 79 to target variable clivi...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'clivi' (table CFday) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 103 to target variable rsutcs...
+INFO:ifs2cmor:Cmorizing source variable 104 to target variable rldscs...
+INFO:ifs2cmor:Cmorizing source variable 97 to target variable rsut...
+INFO:ifs2cmor:Cmorizing source variable 130 to target variable ta700...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'ta700' (table CFday) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 212 to target variable rsdt...
+INFO:ifs2cmor:Cmorizing source variable 102 to target variable rsdscs...
+INFO:ifs2cmor:Cmorizing source variable 95 to target variable rsuscs...
+INFO:ifs2cmor:Cmorizing source variable 106 to target variable rlutcs...
+INFO:ifs2cmor:Cmorizing source variable 116 to target variable clwvi...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'clwvi' (table CFday) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Loading CMOR table Lmon...
+INFO:ifs2cmor:Creating time axes for table Lmon...
+INFO:ifs2cmor:Creating time axis using variable mrsos...
+INFO:ifs2cmor:Creating depth axes for table Lmon...
+INFO:ifs2cmor:Creating vertical axis for sdepth1...
+INFO:ifs2cmor:Cmorizing source variable 99 to target variable mrsos...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'mrsos' (table Lmon) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 43 to target variable mrso...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'mrso' (table Lmon) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 117 to target variable tsl...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'tsl' (table Lmon) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 205 to target variable mrro...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'mrro' (table Lmon) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Loading CMOR table LImon...
+INFO:ifs2cmor:Creating time axes for table LImon...
+INFO:ifs2cmor:Creating time axis using variable snw...
+INFO:ifs2cmor:Creating depth axes for table LImon...
+INFO:ifs2cmor:Cmorizing source variable 141 to target variable snw...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'snw' (table LImon) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 141 to target variable lwsnl...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'lwsnl' (table LImon) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 238 to target variable tsn...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'tsn' (table LImon) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 119 to target variable snc...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'snc' (table LImon) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 115 to target variable snd...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'snd' (table LImon) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 120 to target variable hfdsn...
+INFO:ifs2cmor:Loading CMOR table 6hrPlevPt...
+INFO:ifs2cmor:Creating time axes for table 6hrPlevPt...
+INFO:ifs2cmor:Creating time axis using variable snw...
+INFO:ifs2cmor:Creating depth axes for table 6hrPlevPt...
+INFO:ifs2cmor:Creating vertical axis for height10m...
+INFO:ifs2cmor:Creating vertical axis for height2m...
+INFO:ifs2cmor:Creating vertical axis for sdepth1...
+INFO:ifs2cmor:Cmorizing source variable 141 to target variable snw...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'snw' (table 6hrPlevPt) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 214 to target variable sfcWind...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'sfcWind' (table 6hrPlevPt) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 167 to target variable tas...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'tas' (table 6hrPlevPt) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 99 to target variable mrsos...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'mrsos' (table 6hrPlevPt) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 166 to target variable vas...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'vas' (table 6hrPlevPt) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 165 to target variable uas...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'uas' (table 6hrPlevPt) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 151 to target variable psl...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'psl' (table 6hrPlevPt) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Loading CMOR table day...
+INFO:ifs2cmor:Creating time axes for table day...
+INFO:ifs2cmor:Creating time axis using variable tasmin...
+INFO:ifs2cmor:Creating depth axes for table day...
+INFO:ifs2cmor:Creating vertical axis for height2m...
+INFO:ifs2cmor:Creating vertical axis for sdepth1...
+INFO:ifs2cmor:Creating vertical axis for height10m...
+INFO:ifs2cmor:Cmorizing source variable 202 to target variable tasmin...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'tasmin' (table day) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 146 to target variable hfss...
+INFO:ifs2cmor:Cmorizing source variable 147 to target variable hfls...
+INFO:ifs2cmor:Cmorizing source variable 235 to target variable tslsi...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'tslsi' (table day) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 80 to target variable hurs...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'hurs' (table day) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 99 to target variable mrsos...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'mrsos' (table day) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 201 to target variable tasmax...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'tasmax' (table day) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 169 to target variable rsds...
+INFO:ifs2cmor:Cmorizing source variable 80 to target variable hursmin...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'hursmin' (table day) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 143 to target variable prc...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'prc' (table day) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 167 to target variable tas...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'tas' (table day) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 144 to target variable prsn...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'prsn' (table day) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 119 to target variable snc...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'snc' (table day) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 166 to target variable vas...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'vas' (table day) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 175 to target variable rlds...
+INFO:ifs2cmor:Cmorizing source variable 105 to target variable rlut...
+INFO:ifs2cmor:Cmorizing source variable 80 to target variable hursmax...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'hursmax' (table day) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 151 to target variable psl...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'psl' (table day) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 214 to target variable sfcWind...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'sfcWind' (table day) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 164 to target variable clt...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'clt' (table day) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 141 to target variable snw...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'snw' (table day) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 214 to target variable sfcWindmax...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'sfcWindmax' (table day) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 95 to target variable rsus...
+INFO:ifs2cmor:Cmorizing source variable 96 to target variable rlus...
+INFO:ifs2cmor:Cmorizing source variable 205 to target variable mrro...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'mrro' (table day) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+INFO:ifs2cmor:Cmorizing source variable 165 to target variable uas...
+
+[2;34;47mC Traceback:
+In function: cmor_variable
+! [0m
+
+[1;34;47m!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Warning: variable 'uas' (table day) you passed positive value:down, but table does not mention it, will be ignored, if you really want this in your variable output use cmor_set_variable_attribute_internal function
+!
+!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+! ------
+! CMOR is now closed.
+! ------
+! During execution we encountered:
+!  65 Warning(s)
+!   0 Error(s)
+! ------
+! Please review them.
+! ------
+! 
